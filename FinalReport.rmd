@@ -71,8 +71,13 @@ The disparity between whites and the other races is extreme. These plots show us
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table2 <- xtabs(~cappun + race, data=mydata)
+round(prop.table(table2, margin = 1) * 100, 2)
+round(prop.table(table2, margin = 2) * 100, 2)
+```
 
-
+These tables show us that 80% of the people in favor of capital punishment are white people. Black people made up 11.72% of those in favor, and the other races made up 8.47%. 65.38% of opposes were white, 24.11% were black, and 10.51% were other races. 
 
 ## Now with More data
 
