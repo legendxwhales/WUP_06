@@ -46,7 +46,22 @@ This was a categorical categorical problem. In this category, we discovered 3 se
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+dd3 <- mydata %>% group_by(cappun,race) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd3,aes(x=cappun,y=count,fill=race))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd3,aes(x=cappun,y=prcnt*100,fill=race)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+The disparity between whites and the other races is extreme. These plots show us that whites greatly support capital punishment, while blacks and other races oppose it. 
 
 ## Now with The Most data (fewer variables gives more data points)
 
