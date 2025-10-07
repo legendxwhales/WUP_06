@@ -92,6 +92,11 @@ These tables show us that 80% of the people in favor of capital punishment are w
 
 ## More data version
 
+```{r}
+fisherXY(mydata$race,mydata$cappun)
+```
+
+According to this data, every group contrasts each other. Most groups have a low p-value.
 
 # Discussion and Conclusion
 
