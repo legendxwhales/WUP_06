@@ -90,3 +90,5 @@ When I observed the inferential results, it gave me the P-value for comparison b
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+This process showed that there was a significant amount of difference between both observations. This is because the number 2 branch data tells us that white and black had a significant difference, while the other data was the same. In totality, this branch tells us that the values are not different while the master branch tells us the opposite. Two different results of data are being displayed here which adheres to our statistical analysis and progression in this class.
